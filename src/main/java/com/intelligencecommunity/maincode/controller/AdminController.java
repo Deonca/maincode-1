@@ -20,10 +20,8 @@ public class AdminController {
     AdminService adminService;
 
     @RequestMapping("/text")
-    public ModelAndView text(String text){
-        ModelAndView modelAndView=new ModelAndView();
-        modelAndView.setViewName("payAdministrative");
-        return modelAndView;
+    public String text(String text){
+        return "参数："+text;
     }
 
     /**
