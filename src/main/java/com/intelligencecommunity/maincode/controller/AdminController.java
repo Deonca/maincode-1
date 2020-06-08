@@ -24,6 +24,11 @@ public class AdminController {
         return "参数："+text;
     }
 
+    @RequestMapping("/text2")
+    public String text2(String text){
+        return "参数2："+text;
+    }
+
     /**
      * 根据业主id获取该业主所有信息
      * @param ownerId 业主id
